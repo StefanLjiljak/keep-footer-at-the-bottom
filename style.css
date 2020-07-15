@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f1f1f1;
+  /* bottom footer */
+  position: relative;
+  /* padding value of footer height */
+  padding-bottom: 58px;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  background: #333;
+  color: #fff;
+  padding: 50px;
+}
+
+header h1 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+header p {
+  font-size: 22px;
+}
+
+main {
+  width: 90vw;
+  margin: 0 auto;
+  padding: 30px 20px;
+  /* Setting min-height in order there is no content it will apply this height and if content is larger it will override this height*/
+  /* 201px h of header and 58px of footer - find it in devtools */
+  /* min-height: calc(100vh - 201px - 58px); */
+}
+
+article {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+article:last-child {
+  margin-bottom: 0;
+}
+
+article h3 {
+  margin: 30px 0 25px 0;
+}
+
+article p {
+  margin-top: 16px;
+  line-height: 24px;
+}
+
+footer {
+  text-align: center;
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  /* footer bottom */
+  position: absolute;
+  /* position: fixed; */
+  bottom: 0;
+  width: 100%;
+  /* z-index: 10; */
+}
